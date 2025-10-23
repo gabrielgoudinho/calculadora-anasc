@@ -159,7 +159,7 @@
     <select id="vistoria">
       <option value="0">R$ 0,00</option>
       <option value="50">R$ 50,00</option>
-      <option value="80">R$ 80,00</option>
+      <option value="75">R$ 75,00</option>
       <option value="100">R$ 100,00</option>
       <option value="150">R$ 150,00</option>
       <option value="180">R$ 180,00</option>
@@ -187,7 +187,7 @@
     function diasRestantesNoMes() {
       const hoje = new Date();
       const ultimoDia = new Date(hoje.getFullYear(), hoje.getMonth() + 1, 0).getDate();
-      return ultimoDia - hoje.getDate() + 1;
+      return ultimoDia - hoje.getDate();
     }
 
     function verificarRecorrente() {
