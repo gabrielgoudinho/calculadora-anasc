@@ -283,13 +283,12 @@
     `🎯 Total: R$ ${total.toFixed(2)}`;
 
   // Card 2: Total sem desconto de dias (mensalidade cheia)
-  const totalSemDesconto = taxaMensal + pacote + vistoria + opcional + rastreador;
+  const totalSemDesconto = taxaMensal + pacote + opcional + rastreador;
   const resultadoTotalTexto =
     `� MENSALIDADE COMPLETA\n\n` +
     `�📅 Mensalidade completa (30 dias)\n` +
     `💰 ${(taxa * 100).toFixed(2)}% da FIPE (mensal): R$ ${taxaMensal.toFixed(2)}\n` +
     `📦 Pacote: R$ ${pacote.toFixed(2)}\n` +
-    `🔍 Vistoria: R$ ${vistoria.toFixed(2)}\n` +
     `🧩 Opcional: R$ ${opcional.toFixed(2)}\n` +
     `📡 Rastreador: R$ ${rastreador.toFixed(2)}\n\n` +
     `🎯 Total Sem Desconto: R$ ${totalSemDesconto.toFixed(2)}`;
@@ -301,7 +300,6 @@
     `📅 50% da mensalidade completa\n` +
     `💰 ${(taxa * 100).toFixed(2)}% da FIPE (mensal): R$ ${(taxaMensal / 2).toFixed(2)}\n` +
     `📦 Pacote: R$ ${(pacote / 2).toFixed(2)}\n` +
-    `🔍 Vistoria: R$ ${(vistoria / 2).toFixed(2)}\n` +
     `🧩 Opcional: R$ ${(opcional / 2).toFixed(2)}\n` +
     `📡 Rastreador: R$ ${(rastreador / 2).toFixed(2)}\n\n` +
     `🎯 Total 50%: R$ ${totalCinquentaPorcento.toFixed(2)}`;
